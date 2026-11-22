@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #090914;
+    color: #f7f5ff;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: #090914;
+    background-image:
+      radial-gradient(circle at 82% 0%, rgba(74, 34, 108, 0.42) 0%, transparent 38%),
+      radial-gradient(circle at 0% 38%, rgba(42, 22, 74, 0.36) 0%, transparent 34%);
+    background-attachment: fixed;
+    letter-spacing: 0.005em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

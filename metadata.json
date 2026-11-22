@@ -1,0 +1,8 @@
+{
+  "name": "ATBUXSTORE — Top Up Robux via Username",
+  "description": "Top up Robux mudah dan aman via username Roblox. Pilih paket nominal 100 sampai 1.000 Robux dengan rate Rp150 dan pesan langsung melalui WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
